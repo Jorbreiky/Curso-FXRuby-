@@ -15,7 +15,6 @@ class Mensajes
 
   def error(app, tipo_mensaje, texto_superior, mensaje)
     return FXMessageBox.error(app, @tipo_mensajes[tipo_mensaje], texto_superior, mensaje)
-    #FXMessageBox.error(app,MBOX_OK, texto_superior, mensaje)
   end
 
   def informacion(app, tipo_mensaje, texto_superior, mensaje)
@@ -31,9 +30,3 @@ class Mensajes
   end
 
 end
-=begin
-app = FXApp.new
-app.create
-mensaje = Mensajes.new()
-puts mensaje.error(app, 4,"Texto Superior", "Hola Mundo")
-=end
