@@ -25,8 +25,3 @@ class Combo < FXMainWindow
     show(PLACEMENT_SCREEN)
   end
 end
-
-app = FXApp.new
-Combo.new(app)
-app.create
-app.run
